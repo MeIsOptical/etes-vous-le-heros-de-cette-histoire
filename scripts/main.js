@@ -31,7 +31,7 @@ async function boot() {
         }
 
         // update root-relative links to include base path
-        for (const link of headerElement.querySelectorAll("a")) {
+        for (const link of document.querySelectorAll("a")) {
             const href = link.getAttribute("href");
             if (href && href.startsWith("/")) {
                 link.setAttribute("href", basePath + href);
