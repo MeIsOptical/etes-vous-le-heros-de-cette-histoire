@@ -23,6 +23,22 @@ async function boot() {
         headerElement.innerHTML = headerContents;
 
 
+
+        // get dynamic base path from script location
+        let basePath = new URL('../', import.meta.url).pathname;
+        if (basePath.endsWith('/')) {
+            basePath = basePath.slice(0, -1);
+        }
+
+        // update root-relative links to include base path
+        for (const link of headerElement.querySelectorAll("a")) {
+            const href = link.getAttribute("href");
+            if (href && href.startsWith("/")) {
+                link.setAttribute("href", basePath + href);
+            }
+        }
+
+
         // apply active class to current page link
         const currentPath = window.location.pathname;
         
