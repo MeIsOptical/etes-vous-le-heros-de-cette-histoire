@@ -12,6 +12,10 @@
     --main-theme-color: #4d658a;
     --main-highlight-color: #b9ffcd;
 
+    --main-border-color: #ffffff;
+
+    --main-btn-color: white;
+
     /* #endregion */
 
 
@@ -24,6 +28,8 @@
 
     --header-dropdown-color: hsl(from var(--main-theme-color) h s calc(l + 10));
 
+    --header-text-color: var(--main-btn-color);
+
     /* #endregion */
 
 
@@ -31,7 +37,7 @@
 
     /* #region TEXT */
 
-    --c-main-text: white;
+    --main-text-color: black;
 
     /* #endregion */
 
