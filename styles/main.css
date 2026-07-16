@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6, a, .linkBtn {
     letter-spacing: 1px;
 }
 
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.9em; }
+
+
 
 
 
@@ -168,6 +172,8 @@ h1, h2, h3, h4, h5, h6, a, .linkBtn {
     width: 100%;
     min-height: 100%;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .backgroundImg {
@@ -177,10 +183,11 @@ h1, h2, h3, h4, h5, h6, a, .linkBtn {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
-    opacity: 50%;
+    height: 130%;
+    opacity: 0.4;
     overflow: hidden;
     z-index: -1;
+    will-change: transform;
 }
 
 .defaultHr {
@@ -208,6 +215,52 @@ h1, h2, h3, h4, h5, h6, a, .linkBtn {
 }
 
 
+
+
+.mainContentDiv {
+    display: flex;
+    width: 100%; height: fit-content;
+    margin-bottom: 50px;
+    padding: 20px calc(3% + 10px);
+    background-color: var(--main-back-color);
+    flex-direction: row;
+}
+
+@media (max-width: 500px) {
+    .mainContentDiv {
+        flex-direction: column;
+    }
+
+    .mainContentDiv h2, .mainContentDiv .defaultSub {
+        text-align: center;
+    }
+}
+
+
+.contentSeparator {
+    flex: 2;
+    padding: 10px;
+}
+
+.contentImgContainer {
+    flex: 1;
+}
+
+.fullImg {
+    width: 100%;
+}
+
+
+.defaultSub {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.defaultP {
+    font-size: 1.15rem;
+}
+
+
 /* #endregion */
 
 
@@ -223,7 +276,7 @@ h1, h2, h3, h4, h5, h6, a, .linkBtn {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 40px 0; padding: 30px;
+    margin: 50px 0; padding: 30px;
     background-color: var(--main-back-color);
     width: 85%;
     min-width: 305px;

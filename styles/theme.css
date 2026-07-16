@@ -6,7 +6,7 @@
     /* #region MAIN CONTENT */
 
     --main-font-title: 'Komikula';
-    --main-font: 'CaviarDreams';
+    --main-font: 'CreatoDisplay';
 
     --main-back-color: #ffffff;
     --main-theme-color: #4d658a;
@@ -71,21 +71,21 @@
 
 
 @font-face {
-    font-family: 'CaviarDreams';
+    font-family: 'CreatoDisplay';
     src: 
-        url('../assets/fonts/CaviarDreams.ttf') format('truetype');
+        url('../assets/fonts/creatoDisplay-Regular.otf') format('opentype');
 
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'CaviarDreams';
     src: 
         url('../assets/fonts/CaviarDreams_Bold.ttf') format('truetype');
 
     font-weight: bold;
     font-style: normal;
-}
+}*/
 
 /* #endregion */
