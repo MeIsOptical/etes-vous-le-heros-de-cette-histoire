@@ -16,7 +16,8 @@ async function boot() {
 
         // set header from component file
 
-        const headerResponse = await fetch("/components/header.html");
+        const headerUrl = new URL('../components/header.html', import.meta.url);
+        const headerResponse = await fetch(headerUrl);
         const headerContents = await headerResponse.text();
 
         headerElement.innerHTML = headerContents;
