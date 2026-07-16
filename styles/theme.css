@@ -1,0 +1,91 @@
+
+
+
+:root {
+
+    /* #region MAIN CONTENT */
+
+    --main-font-title: 'Komikula';
+    --main-font: 'CaviarDreams';
+
+    --main-back-color: #ffffff;
+    --main-theme-color: #4d658a;
+    --main-highlight-color: #b9ffcd;
+
+    /* #endregion */
+
+
+
+
+    /* #region HEADER */
+
+    --header-color: var(--main-theme-color);
+    --header-links-gap: 25px;
+
+    --header-dropdown-color: hsl(from var(--main-theme-color) h s calc(l + 10));
+
+    /* #endregion */
+
+
+
+
+    /* #region TEXT */
+
+    --c-main-text: white;
+
+    /* #endregion */
+
+}
+
+
+
+
+
+
+
+
+
+/* #region FONTS */
+
+@font-face {
+    font-family: 'Komikula';
+    src: 
+        url('../assets/fonts/Komikula.ttf') format('truetype'),
+        url('../assets/fonts/Komikula.otf') format('opentype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Komikula';
+    src: 
+        url('../assets/fonts/Komikula-Bold.ttf') format('truetype'),
+        url('../assets/fonts/Komikula-Bold.otf') format('opentype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: 
+        url('../assets/fonts/CaviarDreams.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: 
+        url('../assets/fonts/CaviarDreams_Bold.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* #endregion */
