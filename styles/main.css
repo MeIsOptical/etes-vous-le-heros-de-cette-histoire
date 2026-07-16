@@ -222,7 +222,7 @@ h2 { font-size: 1.9em; }
 .mainContentDiv {
     display: flex;
     width: 100%; height: fit-content;
-    margin-bottom: 70px;
+    margin-bottom: var(--content-div-space);
     padding: 20px calc(3% + 10px);
     background-color: var(--main-back-color);
     flex-direction: row;
