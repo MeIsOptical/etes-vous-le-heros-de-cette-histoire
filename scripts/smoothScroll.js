@@ -42,6 +42,32 @@ export function loadSmoothScroll() {
             requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
+
+
+
+
+        // smooth url movement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // scroll to middle
+                    const elementHeight = targetElement.offsetHeight;
+                    const windowHeight = window.innerHeight;
+                    const offset = (windowHeight / 2) - (elementHeight / 2);
+
+                    lenis.scrollTo(targetElement, {
+                        offset: -offset
+                    });
+                                        
+                    window.history.pushState(null, null, targetId); 
+                }
+            });
+        });
     });
 
 }
