@@ -367,3 +367,46 @@ h2 { font-size: 1.9em; }
 }
 
 /* #endregion */
+
+
+
+
+
+
+
+
+
+/* #region FOOTER */
+
+#footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--footer-color);
+    color: var(--footer-text-color);
+    padding: 25px 10px;
+}
+
+#brandDiv {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+#brandName {
+    font-family: 'Jersey10';
+    font-size: 1.5em;
+    color: #5cec86;
+    text-shadow: 0 0 0.1em #5cec879d;
+    text-decoration: underline;
+}
+
+#brandImg {
+    width: 23px;
+}
+
+/* #endregion */

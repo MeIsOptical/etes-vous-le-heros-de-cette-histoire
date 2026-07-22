@@ -36,6 +36,15 @@
 
 
 
+    /* #region FOOTER */
+
+    --footer-color: #222;
+    --footer-text-color: white;
+
+    /* #endregion */
+
+
+
 
     /* #region TEXT */
 
@@ -87,13 +96,13 @@
     font-style: normal;
 }
 
-/*@font-face {
-    font-family: 'CaviarDreams';
+@font-face {
+    font-family: 'Jersey10';
     src: 
-        url('../assets/fonts/CaviarDreams_Bold.ttf') format('truetype');
+        url('../assets/fonts/Jersey10-Regular.ttf') format('truetype');
 
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
-}*/
+}
 
 /* #endregion */
