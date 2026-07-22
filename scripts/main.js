@@ -23,22 +23,6 @@ async function boot() {
         headerElement.innerHTML = headerContents;
 
 
-
-        // get dynamic base path from script location
-        let basePath = new URL('../', import.meta.url).pathname;
-        if (basePath.endsWith('/')) {
-            basePath = basePath.slice(0, -1);
-        }
-
-        // update root-relative links to include base path
-        for (const link of document.querySelectorAll("a")) {
-            const href = link.getAttribute("href");
-            if (href && href.startsWith("/")) {
-                link.setAttribute("href", basePath + href);
-            }
-        }
-
-
         // apply active class to current page link
         const currentPath = window.location.pathname;
         
@@ -62,6 +46,51 @@ async function boot() {
     //#region SMOOTH SCROLL
 
     loadSmoothScroll();
+
+    //#endregion
+
+
+
+
+
+
+    //#region FOOTER
+
+    const footerElement = document.getElementById("footerDiv");
+    if (footerElement) {
+
+        // set footer from component file
+
+        const footerUrl = new URL('../components/footer.html', import.meta.url);
+        const footerResponse = await fetch(footerUrl);
+        const footerContents = await footerResponse.text();
+
+        footerElement.innerHTML = footerContents;
+
+
+    }
+
+    //#endregion
+
+
+
+
+
+    //#region fixed paths
+
+    // get dynamic base path from script location
+        let basePath = new URL('../', import.meta.url).pathname;
+        if (basePath.endsWith('/')) {
+            basePath = basePath.slice(0, -1);
+        }
+
+    // update root-relative links to include base path
+    for (const link of document.querySelectorAll("a")) {
+        const href = link.getAttribute("href");
+        if (href && href.startsWith("/")) {
+            link.setAttribute("href", basePath + href);
+        }
+    }
 
     //#endregion
 }
