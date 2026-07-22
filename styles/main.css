@@ -13,7 +13,7 @@ html, body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, a, .linkBtn {
+h1, h2, h3, h4, h5, h6, .headerLink a, .linkBtn {
     font-family: var(--main-font-title);
     letter-spacing: 1px;
 }
@@ -340,3 +340,30 @@ h2 { font-size: 1.9em; }
 
 /* #endregion */
 
+
+
+
+
+
+
+/* #region SOCIALS */
+
+.socialDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.socialLine {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: row;
+}
+
+.socialIcon {
+    width: 26px;
+    
+}
+
+/* #endregion */
