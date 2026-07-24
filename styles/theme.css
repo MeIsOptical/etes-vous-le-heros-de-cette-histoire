@@ -5,7 +5,7 @@
 
     /* #region MAIN CONTENT */
 
-    --main-font-title: 'Komikula';
+    --main-font-title: 'RomanAntique';
     --main-font: 'CreatoDisplay';
 
     --main-back-color: #ffffff;
@@ -40,7 +40,7 @@
 
     /* #region FOOTER */
 
-    --footer-color: #222;
+    --footer-color: #333;
     --footer-text-color: white;
 
     /* #endregion */
@@ -66,26 +66,15 @@
 
 /* #region FONTS */
 
+
 @font-face {
-    font-family: 'Komikula';
+    font-family: 'RomanAntique';
     src: 
-        url('../assets/fonts/Komikula.ttf') format('truetype'),
-        url('../assets/fonts/Komikula.otf') format('opentype');
+        url('../assets/fonts/RomanAntique.ttf') format('truetype');
 
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Komikula';
-    src: 
-        url('../assets/fonts/Komikula-Bold.ttf') format('truetype'),
-        url('../assets/fonts/Komikula-Bold.otf') format('opentype');
-
-    font-weight: bold;
-    font-style: normal;
-}
-
 
 
 
@@ -108,3 +97,5 @@
 }
 
 /* #endregion */
+
+

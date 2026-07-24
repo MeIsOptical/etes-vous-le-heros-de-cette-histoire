@@ -389,7 +389,7 @@ h2 { font-size: 1.9em; }
     background-color: var(--footer-color);
     box-shadow: var(--container-shadow);
     color: var(--footer-text-color);
-    padding: 25px 10px;
+    padding: 10px;
 }
 
 #brandDiv {
